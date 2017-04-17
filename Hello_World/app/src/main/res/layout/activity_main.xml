@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.erikagafe.hello_world.MainActivity">
+
+    <TextView android:text="MIS HW1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/button"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentRight="true"/>
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="16sp"
+        android:focusable="true"
+        android:hint="Enter Text"
+        android:text="http://www.google.de"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#ffff25e6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView android:text="example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview1"
+        android:layout_below="@id/editText"
+        android:layout_alignParentLeft="true"
+        />
+
+    <!--https://www.tutorialspoint.com/android/android_webview_layout.htm-->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.894"
+        tools:layout_editor_absoluteX="151dp"
+        android:layout_below="@+id/textview1" />
+</RelativeLayout>
+
+
